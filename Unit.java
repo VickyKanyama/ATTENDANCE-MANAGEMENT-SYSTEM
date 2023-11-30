@@ -1,7 +1,7 @@
 public class Unit {
     private String unitName;
-    private Integer unitNo;
-     Unit(String unitName,Integer unitNo){
+    private int unitNo;
+     public Unit(String unitName,int unitNo){
         this.setUnitName(unitName);
         this.setUnitNo(unitNo);
     }
@@ -9,7 +9,7 @@ public class Unit {
     {
         return unitName;
     }
-    public Integer getUnitNo()
+    public int getUnitNo()
     {
         return unitNo;
     }
@@ -19,7 +19,7 @@ public class Unit {
     {
         this.unitName=unitName;
     }
-    public void setUnitNo(Integer unitNo)
+    public void setUnitNo(int unitNo)
     {
         this.unitNo=unitNo;
     }}

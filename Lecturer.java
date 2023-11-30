@@ -1,12 +1,22 @@
 public class Lecturer extends Person {
-     private Course course;
-     private Unit unit;
+    private Object employeeID;
+    private String department;
 
-    public Course getCourse() {
-        return this.course;
+    public Lecturer(String name,int age,Object employeeID,String department){
+        super(name,age);
+        this.employeeID=employeeID;
+        this.department=department;
     }
-
-    public Unit getUnit() {
-        return this.unit;
+    private  Object getEmployeeID(){
+        return employeeID;
+    }
+    private void setEmployeeID(Object employeeID){
+        this.employeeID=employeeID;
+    }
+    private String getDepartment(){
+        return department;
+    }
+    private void setDepartment(String department){
+        this.department=department;
     }
 }
